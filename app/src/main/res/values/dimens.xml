@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_padding_12">12dp</dimen>
+    <dimen name="height_50_dp">50dp</dimen>
+    <dimen name="text_inputs">16sp</dimen>
+    <dimen name="buttons_tabs">16sp</dimen>
+</resources>

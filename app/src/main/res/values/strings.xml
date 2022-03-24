@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sample Category Application</string>
+    <string name="prompt_first_name">Category name in English</string>
+    <string name="prompt_name_hindi">Category Name in Hindi</string>
+    <string name="prompt_description">Category Description</string>
+    <string name="create">Create</string>
+    <string name="prompt_search_here">Search</string>
+</resources>

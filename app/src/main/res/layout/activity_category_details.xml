@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.content.Context" />
+        <variable
+            name="viewmodel"
+            type="com.example.samplecategoryapplication.ui.activities.category_create.CategoryCreateViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.category_create.CategoryCreateActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="Create a Category"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50_dp"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/drawable_edit_text_normal">
+
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/prompt_first_name"
+                        android:inputType="textCapWords"
+                        android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                        android:singleLine="true"
+                        android:text="@={viewmodel.categoryNameEnglish}"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="@dimen/text_inputs">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_name_hindi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50_dp"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/drawable_edit_text_normal">
+
+                    <EditText
+                        android:id="@+id/edit_name_hindi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/prompt_name_hindi"
+                        android:inputType="textCapWords"
+                        android:text="@={viewmodel.categoryNameHindi}"
+                        android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="@dimen/text_inputs">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edit_text_normal">
+
+                    <EditText
+                        android:id="@+id/edit_descr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/prompt_description"
+                        android:inputType="textCapWords"
+                        android:text="@={viewmodel.categoryDescription}"
+                        android:minHeight="85dp"
+                        android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="@dimen/text_inputs">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50_dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edit_text_normal">
+
+                    <EditText
+                        android:id="@+id/edit_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawableRight="@drawable/ic_down"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Choose Category"
+                        android:inputType="textCapWords"
+                        android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="@dimen/text_inputs">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_featured"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edit_text_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/edit_featured"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:text="Choose Type"
+                        android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                        android:paddingVertical="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="@dimen/text_inputs">
+
+                    </TextView>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:id="@+id/radio_group"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio_featured"
+                            android:gravity="center"
+                            android:text="Featured"
+                            android:checked="true"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio_non_featured"
+                            android:gravity="center"
+                            android:text="Non-Featured"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                 <LinearLayout
+                    android:id="@+id/layout_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edit_text_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:text="Upload Image"
+                        android:paddingHorizontal="@dimen/activity_horizontal_padding_12"
+                        android:paddingVertical="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="@dimen/text_inputs">
+
+                    </TextView>
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="20dp"
+                         android:orientation="horizontal">
+                         <ImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:id="@+id/iv_attached"
+                             android:visibility="gone">
+
+                         </ImageView>
+                         <ImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="20dp"
+                             android:id="@+id/iv_add"
+                             android:src="@drawable/plus">
+
+                         </ImageView>
+                     </LinearLayout>
+
+                 </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_50_dp"
+                    android:background="@drawable/drawable_button_round_edge"
+                    android:text="@string/create"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="true"
+                    android:onClick="@{() -> viewmodel.createCategory(context)}"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/buttons_tabs">
+
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
