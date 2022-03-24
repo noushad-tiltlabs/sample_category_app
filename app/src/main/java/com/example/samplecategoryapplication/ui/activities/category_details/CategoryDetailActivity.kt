@@ -12,7 +12,9 @@ import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import java.io.File
 import java.lang.Exception
-
+/**
+ * Created by Noushad N on 24-03-2022.
+ */
 class CategoryDetailActivity : AppCompatActivity() {
     var categoryData : CategoryData?=null
     private var binding : ActivityCategoryDetailBinding?=null

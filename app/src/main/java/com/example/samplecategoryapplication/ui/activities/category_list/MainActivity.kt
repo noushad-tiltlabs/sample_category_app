@@ -13,7 +13,9 @@ import com.example.samplecategoryapplication.ui.activities.category_create.Categ
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
-
+/**
+ * Created by Noushad N on 23-03-2022.
+ */
 class MainActivity : DaggerAppCompatActivity() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory

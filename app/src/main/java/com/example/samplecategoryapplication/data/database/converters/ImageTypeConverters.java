@@ -8,8 +8,9 @@ import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.List;
-//class generated for converting category object to string and vice-versa for database operations
-
+/**
+ * Created by Noushad N on 23-03-2022.
+ */
 public class ImageTypeConverters {
     @TypeConverter
     public static List<String> stringToImages(String json) {

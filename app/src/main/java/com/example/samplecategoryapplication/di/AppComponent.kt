@@ -9,7 +9,7 @@ import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import javax.inject.Singleton
 /**
- * Created by Noushad N on 14-01-2022.
+ * Created by Noushad N on 23-03-2022.
  */
 @Singleton
 @Component(modules = [ AndroidInjectionModule::class, ActivityModule::class,

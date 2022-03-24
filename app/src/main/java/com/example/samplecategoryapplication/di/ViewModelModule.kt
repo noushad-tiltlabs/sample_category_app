@@ -11,7 +11,7 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 import kotlin.reflect.KClass
 /**
- * Created by Noushad N on 14-01-2022.
+ * Created by Noushad N on 23-03-2022.
  */
 @Suppress("unused")
 @Module

@@ -7,7 +7,9 @@ import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import com.example.samplecategoryapplication.data.model.CategoryData
 
-
+/**
+ * Created by Noushad N on 23-03-2022.
+ */
 @Database(
     entities = [CategoryData::class],
     version = 1,

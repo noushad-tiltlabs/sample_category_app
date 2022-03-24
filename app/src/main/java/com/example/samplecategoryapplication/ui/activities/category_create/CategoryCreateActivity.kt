@@ -22,7 +22,9 @@ import com.example.samplecategoryapplication.utils.URIPathHelper
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
-
+/**
+ * Created by Noushad N on 23-03-2022.
+ */
 class CategoryCreateActivity : DaggerAppCompatActivity() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory

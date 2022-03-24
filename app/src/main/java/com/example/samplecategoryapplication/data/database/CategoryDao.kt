@@ -6,7 +6,9 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.samplecategoryapplication.data.model.CategoryData
-
+/**
+ * Created by Noushad N on 23-03-2022.
+ */
 @Dao
 interface CategoryDao{
 

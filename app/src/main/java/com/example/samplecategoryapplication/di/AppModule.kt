@@ -4,7 +4,7 @@ import com.example.samplecategoryapplication.di.DataModule
 import dagger.Module
 
 /**
- * Created by Noushad N on 14-01-2022.
+ * Created by Noushad N on 23-03-2022.
  */
 @Module(
     includes = [

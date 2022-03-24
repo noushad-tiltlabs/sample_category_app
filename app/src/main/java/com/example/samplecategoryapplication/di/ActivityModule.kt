@@ -5,7 +5,7 @@ import com.example.samplecategoryapplication.ui.activities.category_list.MainAct
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 /**
- * Created by Noushad N on 14-01-2022.
+ * Created by Noushad N on 23-03-2022.
  */
 @Suppress("unused")
 @Module
